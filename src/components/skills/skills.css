@@ -1,0 +1,9 @@
+.skill-con {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1.5rem;
+}
+
+.description {
+  padding-bottom: 2rem;
+}

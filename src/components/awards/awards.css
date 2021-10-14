@@ -1,0 +1,43 @@
+/* AWARD ITEMS COMPONENT STYLES */
+.awardItemStyled {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ai-number {
+  padding: 0.5rem 0;
+  color: #6bbe92;
+}
+
+.ai-number p:nth-child(2) {
+  color: #f24e1e;
+}
+
+/* AWARDS JS COMPONENT STYLES*/
+.awardStyled {
+  background: linear-gradient(
+    117.76deg,
+    rgba(255, 255, 255, 0.7) -7.21%,
+    rgba(255, 255, 255, 0.5) 118.08%
+  );
+  backdrop-filter: blur(9px);
+  padding: 1.5rem 2rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 786px) {
+  /* AWARDS JS COMPONENT STYLES*/
+  .awardStyled {
+    margin-top: 1rem;
+    margin-left: 0;
+    padding: 1.2rem 0.8rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

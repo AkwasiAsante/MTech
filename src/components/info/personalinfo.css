@@ -1,0 +1,88 @@
+.personalInfo {
+  grid-column: 1 / 4;
+  background: linear-gradient(
+    117.76deg,
+    rgba(255, 255, 255, 0.7) -7.21%,
+    rgba(255, 255, 255, 0.5) 118.08%
+  );
+  backdrop-filter: blur(9px);
+  border-radius: 8px;
+  margin-bottom: 30px;
+  border: 2px solid #fff;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.02);
+}
+
+.personal-info-con {
+  padding: 2.5rem 2rem;
+}
+
+.avatar-con {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 10px;
+  margin-right: 2rem;
+  padding-right: 3rem;
+  display: flex;
+  align-items: center;
+}
+.avatar-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.right-avatar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.right-avatar p {
+  padding: 1rem 0;
+}
+
+.contact-btn {
+  background-color: #6bbe92;
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.about-text {
+  padding: 1.5rem 0;
+  font-size: 14px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.icon p {
+  padding-left: 1rem;
+  font-size: 14px;
+}
+
+@media (max-width: 786px) {
+  .personalInfo {
+    margin-bottom: 5px;
+  }
+  .personal-info-con {
+    padding: 1.5rem 1rem;
+  }
+
+  .avatar {
+    padding-right: 1rem;
+    display: flex;
+  }
+
+  .contact-btn {
+    padding: 0.3rem 0.4rem;
+  }
+}
