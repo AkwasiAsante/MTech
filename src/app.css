@@ -1,7 +1,10 @@
 .appStyled {
   min-height: 100vh;
   width: 100%;
-  padding: 1.8rem 0.8rem;
+  /* padding: 10rem 0.8rem; */
+  padding-top: 1.8rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
 }
 .tabs-con {
   display: grid;
@@ -9,6 +12,10 @@
   width: 100%;
   grid-template-columns: repeat(8, 1fr);
   grid-gap: 1rem;
+}
+.contactMe {
+  min-height: 10vh;
+  width: 100%;
 }
 
 @media (max-width: 786px) {

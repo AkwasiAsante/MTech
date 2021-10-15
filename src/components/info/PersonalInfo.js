@@ -6,7 +6,14 @@ import contact from '../../assets/contact.svg';
 import email from '../../assets/email.svg';
 import './personalinfo.css';
 
-const PersonalInfo = () => {
+function PersonalInfo() {
+  const handleScroll = () => {
+    window.scroll({
+      top: document.body.offsetHeight,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className='personalInfo'>
       <div className='personal-info-con'>
@@ -17,7 +24,9 @@ const PersonalInfo = () => {
           <div className='right-avatar'>
             <h4>MTech Solutions</h4>
             <p>Web Developer - Software Developer - Freelancer</p>
-            <div className='contact-btn'>Contact</div>
+            <div className='contact-btn' onClick={handleScroll}>
+              Contact
+            </div>
           </div>
         </div>
         <p className='about-text'>
@@ -49,6 +58,6 @@ const PersonalInfo = () => {
       </div>
     </div>
   );
-};
+}
 
 export default PersonalInfo;
