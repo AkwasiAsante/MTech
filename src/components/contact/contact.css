@@ -14,6 +14,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  position: relative;
 }
 .contact-container {
   background: linear-gradient(
@@ -74,8 +76,10 @@
   cursor: pointer;
   outline: none;
   border: 0;
-  font-weight: 600;
+  font-size: 1.2rem;
+  /* font-weight: 600; */
 }
+
 .send-btn:hover {
   background: #16194f;
   color: white;
@@ -87,7 +91,20 @@
   opacity: 0;
   transition: all 0.8s ease-in-out;
 }
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  right: 1rem;
+  bottom: 1rem;
+  cursor: pointer;
 
+  transform: all 0.8s ease-in-out;
+}
 @media (max-width: 786px) {
   .contact-con {
     padding: 2rem 1rem;
@@ -95,5 +112,8 @@
 
   .form-con {
     width: fit-content;
+  }
+  .call-to-action {
+    bottom: 0.5rem;
   }
 }

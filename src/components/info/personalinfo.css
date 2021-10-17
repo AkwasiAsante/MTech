@@ -22,15 +22,18 @@
 }
 
 .avatar {
+  /* background-color: #ad1925; */
   width: 100%;
   border-radius: 10px;
   margin-right: 2rem;
   padding-right: 3rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .avatar-img {
   width: 100%;
+
   border-radius: 10px;
 }
 
@@ -93,6 +96,6 @@
   }
 
   .contact-btn {
-    padding: 0.3rem 0.4rem;
+    padding: 0.6rem 0.4rem;
   }
 }

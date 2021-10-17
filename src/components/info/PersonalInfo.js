@@ -5,6 +5,7 @@ import location from '../../assets/location.svg';
 import contact from '../../assets/contact.svg';
 import email from '../../assets/email.svg';
 import './personalinfo.css';
+import avatar1 from '../../assets/majormain.png';
 
 function PersonalInfo() {
   const handleScroll = () => {
@@ -25,7 +26,7 @@ function PersonalInfo() {
             <h4>MTech Solutions</h4>
             <p>Web Developer - Software Developer - Freelancer</p>
             <div className='contact-btn' onClick={handleScroll}>
-              Contact
+              Contact Me
             </div>
           </div>
         </div>

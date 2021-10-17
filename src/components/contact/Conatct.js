@@ -3,6 +3,7 @@ import './contact.css';
 import email from '../../assets/email.svg';
 import emailjs from 'emailjs-com';
 import toast, { Toaster } from 'react-hot-toast';
+import home from '../../assets/home.svg';
 
 const Conatct = () => {
   const form = useRef();
@@ -29,6 +30,13 @@ const Conatct = () => {
     e.target.reset();
   };
 
+  const handleScroll = () => {
+    window.scroll({
+      top: document.body.offsetTop,
+      left: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className='contact-con'>
       <div className='contact-container'>
@@ -69,8 +77,10 @@ const Conatct = () => {
             </button>
             <Toaster position='top-center' reverseOrder={false} />
           </form>
-          {/* <button className='send-btn'>Send</button> */}
         </div>
+      </div>
+      <div className='call-to-action' onClick={handleScroll}>
+        <img src={home} alt='' />
       </div>
     </div>
   );
